@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,8 +21,7 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
@@ -51,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\agaly\AppData\Local\Temp\testng-eclipse-346262058\testng-customsuite.xml</span>
+                    <span>C:\Users\agaly\AppData\Local\Temp\testng-eclipse--183722419\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.NewRegistrationRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successful registration with Multiple valid details&quot;, &quot;ArenaCX New Account Registration Functionali...)">runScenario("Successful registration with Multiple valid details", "ArenaCX New Account Registration Functionali...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.NewRegistrationRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successful registration with Multiple valid details&quot;, &quot;ArenaCX New Account Registration Functionali...)">runScenario("Successful registration with Multiple valid details", "ArenaCX New Account Registration Functionali...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.HookTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Just to test hooks&quot;, &quot;Hook Test&quot;)">runScenario("Just to test hooks", "Hook Test")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -127,25 +121,15 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">runner.NewRegistrationRunner</span>
+              <span class="class-name">runner.HookTestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Successful registration with Multiple valid details&quot;, &quot;ArenaCX New Account Registration Functionali...)">
-                  </a> <!-- runScenario("Successful registration with Multiple valid details", "ArenaCX New Account Registration Functionali...) -->
+                  <a name="runScenario(&quot;Just to test hooks&quot;, &quot;Hook Test&quot;)">
+                  </a> <!-- runScenario("Just to test hooks", "Hook Test") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Successful registration with Multiple valid details", "ArenaCX New Account Registration Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Successful registration with Multiple valid details&quot;, &quot;ArenaCX New Account Registration Functionali...)">
-                  </a> <!-- runScenario("Successful registration with Multiple valid details", "ArenaCX New Account Registration Functionali...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Successful registration with Multiple valid details", "ArenaCX New Account Registration Functionality")</span>
+                  <span class="parameters">("Just to test hooks","Hook Test")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -155,7 +139,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\agaly\AppData\Local\Temp\testng-eclipse-346262058\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\agaly\AppData\Local\Temp\testng-eclipse--183722419\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -164,7 +148,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;runner.NewRegistrationRunner&quot;/&gt;
+      &lt;class name=&quot;runner.HookTestRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -212,20 +196,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'runner.NewRegistrationRunner')
-data.setCell(0, 3, 7862);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'runner.NewRegistrationRunner')
-data.setCell(1, 3, 6082);
+data.setCell(0, 2, 'runner.HookTestRunner')
+data.setCell(0, 3, 220);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 220 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -251,22 +231,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">runner.NewRegistrationRunner</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">runner.HookTestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@30abf79c)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@675d8c96)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Successful registration with Multiple valid details", "ArenaCX New Account Registration Functionali...)</span>
-                <span class="method-start">718 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Successful registration with Multiple valid details", "ArenaCX New Account Registration Functionali...)</span>
-                <span class="method-start">8580 ms</span>
+                <span class="method-name">runScenario("Just to test hooks", "Hook Test")</span>
+                <span class="method-start">542 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">14664 ms</span>
+                <span class="method-start">772 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
